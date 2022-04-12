@@ -8,7 +8,7 @@ spec:
   - host: static.joshna.xyz 
     http:
       paths:
-      - path:
+      - path: /contact-svc.contact.svc.cluster.local
         backend:
           serviceName: frontend-svc
           serviceport: 80
