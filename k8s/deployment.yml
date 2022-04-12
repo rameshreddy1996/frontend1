@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: static
-        image: 003669760817.dkr.ecr.ap-southeast-1.amazonaws.com/static1:28
+        image: 003669760817.dkr.ecr.ap-southeast-1.amazonaws.com/static1:30
         ports:
         - containerPort: 80
 
