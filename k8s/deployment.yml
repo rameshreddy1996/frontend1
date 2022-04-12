@@ -1,13 +1,13 @@
-apiVersion: app/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: static
+  name: static-deployment
   namespace: frontend
 spec:
   selector:
-    matchLables:
+    matchLabels:
       app: static-application
-  replicas: 2
+  replicas: 2 # tells deployment to run 2 pods matching the template
   template:
     metadata:
       labels:
@@ -15,9 +15,8 @@ spec:
     spec:
       containers:
       - name: static
-        image: 003669760817.dkr.ecr.ap-southeast-1.amazonaws.com/static1:9
+        image: 003669760817.dkr.ecr.ap-southeast-1.amazonaws.com/static1:9 
         ports:
         - containerPort: 80
-        
 
   
