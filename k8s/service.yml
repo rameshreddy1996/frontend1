@@ -4,7 +4,7 @@ metadata:
   name: frontend-svc
   namespace: frontend
 spec:
-  selsctor:
+  selector:
     app: static-application
   ports:
   - port: 80
