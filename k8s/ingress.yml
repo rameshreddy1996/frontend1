@@ -5,7 +5,7 @@ metadata:
   namespace: frontend
 spec:
   rules:
-  - host: 
+  - host: static.joshna.xyz 
     http:
       paths:
       - path:
